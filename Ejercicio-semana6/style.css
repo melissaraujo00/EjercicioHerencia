@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-color: #9EE1E0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1,h2{
+    text-align: center;
+
+}
+
+.menu {
+    background-color: #FFF;
+    text-align: center;
+    height: 10%;
+    width: 60%;
+    margin: 0 auto; /* Esto centrará el contenedor horizontalmente */
+    padding: 20px; /* Agrega un poco de espacio alrededor del contenedor */
+    margin-top: 25px;
+}
+
+.menu ol,
+.menu ul {
+    text-align: center;
+    padding-left: 0;
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+}
+
+.menu li {
+    margin: 10px 0; /* Espaciado entre elementos de la lista */
+}
+
+.formulario{
+    background-color: #FFF;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto; 
+    padding: 20px;
+    height: 10%;
+}
+
+.cocina{
+    background-color: #FFF;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto; 
+    padding: 20px;
+    margin-top: 25px;
+}

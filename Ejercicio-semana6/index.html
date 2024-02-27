@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Restaurante</h1>
+        <div class="menu">
+        <h2>Menú</h2>
+        <ol>
+            <li>Hamburguesas con papas &nbsp;&nbsp;$5</li>
+            <li>Tacos de Birria &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; $5</li>
+            <li>Nachos  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $5</li>
+            <li> Bebidas de industria la constancia
+                <ul>
+                    <li>Coca-Cola &nbsp; $1</li>
+                    <li>Fanta &nbsp; $1</li>
+                    <li>Pepsi &nbsp; $0.75</li>
+                    <li>7up &nbsp; $0.75</li>
+                    <li>Grepette &nbsp; $0.75</li>
+                </ul>
+            </li>
+        </ol>
+        </div>
+        <form class="formulario">
+            <h2>¡Haz tu pedido aquí!</h2>
+            <br>
+            <label for="">Ingrese tu nombre:</label>
+            <input type="text" id="nombre">
+            <br><br>
+    
+            <label > Seleccione que comida desea: </label>
+            <select  id="comida">
+                <option value="Hamburguesa con papas">Hamburguesas con papas</option>
+                <option value="Tacos de Birria">Tacos de Birria</option>
+                <option value="Nachos">Nachos</option>
+            </select> <br><br>
+    
+            <label>Digite cuantas ordenes desea: </label>
+            <input type="text" id="NumComida">
+            <br><br>
+    
+            <label> Seleccione que bedida desea: </label>
+            <select  id="soda">
+                <option value="coca-cola">Coca-cola</option>
+                <option value="Pepsi">Pepsi</option>
+                <option value="Fanta">Fanta</option>
+                <option value="7uo">7up</option>
+                <option value="Grepette">Grepette</option>
+            </select> <br><br>
+    
+            <label for="">Digite cuantas ordenes desea: </label>
+            <input type="text" id="NumSoda">
+            <br><br>
+    
+            <input type="button" value="Enviar" onclick="Ordenar()">
+            <br>
+            <label >El precio total es: $</label>
+            <label id="totalprecio"></label>
+        </form>
+        <br><br>
+    
+        <table border = "1" class="cocina">
+            <h2>Cocina</h2>
+            <tr>
+                <th>Nombre</th>
+                <th>Comida</th>
+                <th>Orden</th>
+                <th>Bebida</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+                <th>Estado de Pedido</th>
+            </tr>
+            <tr>
+                <td><label id="nom"></label></td>
+                <td><label id="tipo"></label></td>
+                <td><label id="orden"></label></td>
+                <td><label id="bebida"></label></td>
+                <td><label id="Cantidad"></label></td>
+                <td><label id="total"></label></td>
+                <td><label id="estado"></label></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
